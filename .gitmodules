@@ -1,0 +1,3 @@
+[submodule "reposurgeon"]
+	path = reposurgeon
+	url = https://gitlab.com/esr/reposurgeon.git
