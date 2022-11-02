@@ -1,0 +1,12 @@
+read ./repos/repo-1
+path rename /.+/ repo-1/\0
+
+read ./repos/repo-2
+path rename /.+/ repo-2/\0
+
+read ./repos/repo-3
+path rename /.+/ repo-3/\0
+
+unite repo-1 repo-2 repo-3
+gc
+write --legacy ./repos/merged
